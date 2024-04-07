@@ -1,0 +1,274 @@
+body {
+  margin: 0px;
+}
+
+.header_style {
+  background-color: #fff;
+  margin: 18px 0;
+}
+
+.container_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.container_image_coffee {
+  margin-top: 50px;
+}
+
+.list_container {
+  list-style-type: none;
+  display: flex;
+  padding-left: 0px;
+}
+
+.list_style {
+  padding-right: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #156039;
+  font-size: 14px;
+  margin: auto 0;
+}
+
+.list_style a {
+  text-decoration: none;
+  color: #156039;
+}
+
+.list_style:last-child {
+  padding-right: 0px;
+}
+
+.title_style {
+  font-family: "Parisienne", cursive;
+  font-size: 45px;
+  color: #156039;
+  margin: auto 0;
+}
+
+.container_first_info {
+  width: 100%;
+  background-color: #E8F3E3;
+  padding-bottom: 70px;
+}
+
+.container_infos {
+  display: flex;
+  margin: auto 0;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.container_text_information {
+  margin: auto 0;
+}
+
+.title_first_info {
+  font-family: "Parisienne", cursive;
+  font-size: 45px;
+  color: #156039;
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+.content_first_info {
+  font-family: "Farsan", cursive;
+  margin-top: 0px;
+  color: #156039;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container_button_info {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+}
+.button_info {
+  text-align: center;
+  padding: 12px 40px;
+  border:solid 1px #F8D456;
+  border-radius: 8px;
+  color: #156039;
+  font-weight: bold;
+  background-color: #F8D456;
+}
+
+.loop-container {
+  overflow: hidden;
+  width: 99.9%;
+}
+
+.loop-text {
+  display: flex;
+  background-color: #156039;
+  white-space: nowrap; /* Impede que o texto quebre para a próxima linha */
+}
+
+.loop-text p {
+  margin: 0;
+  padding: 50px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
+  font-weight: bolder;
+  font-size: 14px;
+  margin-right: 120px; /* Remove a margem padrão do parágrafo */
+}
+
+.container_contact_cards {
+  width: 100%;
+  justify-content: center;
+  background-color: #E8F3E3;
+}
+
+.container_title_contact {
+  text-align: center;
+}
+
+.container_title_contact h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 70px 0;
+  color: #156039;
+  font-weight: 100;
+  font-size: 24px;
+  margin: 0;
+  text-align: center;
+}
+
+.container_text_info_shop {
+  text-align: center;
+  margin: auto;
+}
+
+.container_text_info_shop h2 {
+  margin: 2px 0px;
+  color: #156039;
+  font-family: "Farsan", cursive;
+  font-size: 35px;
+  margin: 0;
+}
+
+
+.container_title_contact a {
+  text-decoration: underline;
+  color: #156039;
+}
+
+.container_cards {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  margin-right: 24px;
+}
+
+.card:last-child {
+  margin-right: 0px;
+}
+
+.card h3 {
+  color: #156039;
+  font-family: "Farsan", cursive;
+  font-size: 26px;
+  margin: 0;
+  margin-top: 25px;
+}
+
+.card p {
+  color: #156039;
+  font-family: "Farsan", cursive;
+  font-size: 16px;
+  margin: 5px 0 50px 0;
+}
+
+.container_info_shop {
+  display: flex;
+  justify-content: center;
+  background-color: #B9B899;
+}
+
+.text_info {
+  width: 40%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.container_text {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 1440px) {
+  .container_header {
+    max-width: 1440px;
+  }
+}
+
+@media (max-width: 700px) {
+  .list_container {
+    display: none;
+  }
+  .container_header {
+    margin-left: 25px;
+  }
+  .container_image_coffee img {
+    display: none;
+  }
+
+  .container_infos {
+    flex-direction: column-reverse;
+  }
+  
+  .container_cards {
+    display: block;
+  }
+
+  .container_info_shop {
+    display: block;
+    padding-top: 15px;
+  }
+
+  .card p {
+    margin-bottom: 0px;
+  }
+
+  .card {
+    margin-left: 14px;
+  }
+
+  .card img {
+    margin-top: 14px;
+  }
+
+  .container_text_info_shop {
+    padding: 15px 0;
+  }
+
+  .content_first_info {
+    font-size: 25px;
+  }
+
+  .title_style {
+    font-size: 25px;
+  }
+  .container_first_info {
+    padding-bottom: 20px;
+  }
+  .container_header {
+    width: auto;
+  }
+
+  .coffee_shop_image {
+    width: -webkit-fill-available;
+  }
+
+  .loop-text p {
+    margin-left: 10%;
+  }
+}
